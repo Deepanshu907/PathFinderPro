@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Route Optimizer - Map</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<div class="container">
+    <h1>Route Optimizer</h1>
+
+    <div class="controls">
+        <label>Source (A–P): <input id="srcInput" maxlength="1" /></label>
+        <label>Destination (A–P): <input id="destInput" maxlength="1" /></label>
+
+        <!-- Algorithm selection -->
+        <label>Algorithm:
+            <select id="algoSelect">
+                <option value="dijkstra">Dijkstra</option>
+                <option value="bellman-ford">Bellman-Ford</option>
+                <option value="astar">A*</option>
+            </select>
+        </label>
+
+        <button id="goBtn">Find Path</button>
+        <button id="resetBtn">Reset</button>
+    </div>
+
+    <div class="info">
+        <div id="result">Select source & destination or click nodes on the map.</div>
+    </div>
+
+    <canvas id="cityCanvas" width="700" height="520"></canvas>
+
+    <p class="hint">
+        Click a city circle to set Source (first click) and Destination (second click).
+        Or type letters and press "Find Path".
+        Use the dropdown to switch between Dijkstra, Bellman-Ford, and A*.
+    </p>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+body { font-family: Arial, Helvetica, sans-serif; background:#f8fafc; color:#1f2937; margin:0; padding:20px; }
+
+.container { max-width:900px; margin:0 auto; }
+h1 { margin: 0 0 10px 0; }
+.controls { margin: 10px 0; display:flex; gap:10px; align-items:center; }
+.controls input { width:40px; text-transform:uppercase; padding:6px; font-weight:600; }
+.controls button { padding:8px 12px; cursor:pointer; }
+#result { margin:8px 0; padding:8px; background:#fff; border:1px solid #e5e7eb; border-radius:6px; }
+#cityCanvas { background: #fff9f0; border:1px solid #ddd; border-radius:6px; display:block; margin-top:10px; }
+.hint { color:#6b7280; font-size:13px; margin-top:6px; }
+
+
+
